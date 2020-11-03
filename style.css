@@ -1,0 +1,208 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+}
+.Top-Nav-Bar
+{
+    height: 57px;
+        top: 0;
+        position: sticky;
+        background: #FFFFFF;
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+        z-index: 2;
+}
+.logo
+{
+    height: 40px;
+    margin: 5px 10px;
+}
+.Form-Control
+{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid black !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    box-shadow: none;
+}
+.Input-Group-Text
+{
+    background: white;
+    border: 1px solid black !important;
+    margin: 8.5px 10px 3px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+.Search-Box
+{
+    display: inline-flex;
+    width: 25%;
+}
+.fa-search
+{
+    color: black;
+}
+.Menu-Bar
+{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.Menu-Bar ul
+{
+    display: inline-flex;
+    float: right;
+}
+.Menu-Bar ul li
+{
+    border-left: 1px solid white;
+    list-style-type: none;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: black;
+    cursor: pointer;
+}
+.Menu-Bar ul li a
+{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.fa-shopping-cart
+{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .Top-Nav-Bar
+    {
+        height: 118px;
+        border-bottom: 0px;
+    }
+    .Search-Box
+    {
+        width: 100%;
+    }
+    .Menu-Bar
+    {
+        width: 100%;
+    }
+    .Menu-Bar ul
+    {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .Menu-Bar ul li
+    {
+        height: 57px;
+        width: 100%;
+    }
+}
+
+
+/*-----------------------------Side-Menu--------------------------*/
+.Side-Menu
+{
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+    display: none;
+}
+.Side-Menu ul
+{
+    margin-left: 10px;
+}
+.Side-Menu ul li
+{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.Side-Menu ul li:hover
+{
+    color: #3fb9d8
+}
+.Side-Menu ul li ul
+{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.Side-Menu ul li:hover ul
+{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5)
+}
+.fa-angle-right
+{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+#menu-open, #menu-close
+{
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    display: none;
+}
+@media only screen and (max-width: 980px)
+{
+    .Side-Menu
+    {
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+    }
+    .Side-Menu ul li ul
+    {
+        top: 133px;
+    }
+    .Side-Menu ul li:hover ul
+    {
+        margin-left: 31%;
+    }
+    #menu-open
+    {
+        display: block;
+    }
+}
+
+
+/*-----------------------Slider CSS--------------------*/
+.slider
+{
+    width: 65%;
+    margin-left: 15%;
+    padding: 0 10px;
+    
+}
+.indicators
+{
+    height: 60px;
+}
